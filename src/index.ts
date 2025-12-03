@@ -1,22 +1,22 @@
 import { PREFIXES, SEPARATORS, SORT_BY, SORT_ORDER } from "./constants";
 import { XMLParser } from "fast-xml-parser";
 
-type ArxivQueryType = {
+export type ArxivQueryType = {
   searchQuery: string;
   sortBy?: string;
   sortOrder?: string;
   start?: number;
   maxResults?: number;
 };
-type TagData = {
+export type TagData = {
   name: string;
   prefix?: string;
 };
-type SearchQueryParams = {
+export type SearchQueryParams = {
   include: TagData[];
   exclude?: TagData[];
 };
-type SearchApiType = {
+export type SearchApiType = {
   searchQueryParams: SearchQueryParams[];
   sortBy?: string;
   sortOrder?: string;

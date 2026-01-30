@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/isamu/arXiv-api-ts#readme",
   "dependencies": {
-    "fast-xml-parser": "^4.3.3"
+    "fast-xml-parser": "^5.3.4"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",

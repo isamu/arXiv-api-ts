@@ -1,3 +1,4 @@
+[![npm version](https://badge.fury.io/js/arxiv-api-ts.svg)](https://badge.fury.io/js/arxiv-api-ts)
 # arXiv-api-ts
 
 A Javascript wrapper for the arXiv API.
@@ -68,4 +69,3 @@ const papers = search({
 * maxResults - The number of results returned by the query.
 * sortBy - Can be "relevance", "lastUpdatedDate", "submittedDate".
 * sortOrder - Can be either "ascending" or "descending".
-

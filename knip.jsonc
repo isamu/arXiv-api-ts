@@ -1,0 +1,28 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  // Public API source is src/index.ts (package.json "main": dist/index.js is its build output).
+  // knip auto-detects src/index.ts as a default entry, so it is not listed here (listing it
+  // triggers a "redundant entry" hint). The jest tests are colocated at src/**/*.test.ts and
+  // are entry points (they exercise the library), not analyzed source; jest.config.js + the
+  // jest devDependency let knip's jest plugin recognize them, and they are listed explicitly
+  // so their imports count as used.
+  "entry": ["src/**/*.test.ts"],
+  "project": ["src/**/*.ts"],
+  "ignoreExportsUsedInFile": true,
+  "includeEntryExports": false,
+  "rules": {
+    // Warn mode: every rule is "warn" (reported, exit 0) or "off". Nothing gates CI here.
+    "files": "warn",
+    "dependencies": "warn",
+    "devDependencies": "warn",
+    "unlisted": "warn",
+    "exports": "warn",
+    "types": "warn",
+    "unresolved": "off",
+    "binaries": "off",
+    "nsExports": "off",
+    "nsTypes": "off",
+    "enumMembers": "off",
+    "duplicates": "off",
+  },
+}

@@ -105,3 +105,6 @@ dist
 
 # emacs
 *~
+
+# jscpd duplication-scan output (see .github/workflows/duplication-scan.yaml)
+report/
